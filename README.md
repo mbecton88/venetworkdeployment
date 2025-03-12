@@ -31,11 +31,14 @@ Next, I deployed a Windows Server 2019 VM into the 'PublicSubnet.' I named it 'W
 ![image](https://github.com/user-attachments/assets/599eed19-0fb6-449e-bff0-872cbf3770f3)<br>
 ![image](https://github.com/user-attachments/assets/a82208ee-0164-4f70-a1ed-35e23ddf71c5)<br>
 ![image](https://github.com/user-attachments/assets/223809fc-b3b7-4384-a4fa-92a08cff37b3)<br>
-![image](https://github.com/user-attachments/assets/cc4ba5b1-cf1d-49ea-8244-f81eee62ba2b)<br>
+![image](https://github.com/user-attachments/assets/bf8cf823-ab19-488b-970c-833cd573fa4d)<br>
 
 ## Network Security Groups (NSGs):
 
-Security was a top priority. I created two NSGs: 'PublicNSG' and 'PrivateNSG.' For 'PublicNSG,' I configured inbound rules to allow RDP access only from my specific IP address, and I allowed HTTP and HTTPS traffic. For 'PrivateNSG,' I allowed SSH access from my IP address. I also created a rule to allow the 'WebVM' to connect to the 'DatabaseVM' on the database port.
+Security was a top priority. I created two NSGs: 'PublicNSG' and 'PrivateNSG.' For 'PublicNSG,' I configured inbound rules to allow RDP access only from my specific IP address, and I allowed HTTP and HTTPS traffic. For 'PrivateNSG,' I allowed SSH access from my IP address. I also created a rule to allow the 'WebVM' to connect to the 'DatabaseVM' on the database port.<br>
+
+![image](https://github.com/user-attachments/assets/e285c499-2088-4de7-ad45-2c594326a220)<br>
+![image](https://github.com/user-attachments/assets/45599bec-9060-4fba-9d0d-60681b2722f8)<br>
 
 ## Public IP Address:
 
@@ -44,4 +47,5 @@ To enable remote access to the 'WebVM,' I created a public IP address and associ
 ## Testing and Verification:
 
 Finally, I tested the setup. I was able to RDP into the 'WebVM' from my computer. I also verified that the 'WebVM' could connect to the 'DatabaseVM' on the specified port. I then deleted the resource group to prevent any further charges.
+![image](https://github.com/user-attachments/assets/a98b20cf-0106-46b3-ad67-4b4d33b3bd66)
 
